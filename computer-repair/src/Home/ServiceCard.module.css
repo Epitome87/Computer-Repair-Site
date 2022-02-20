@@ -1,0 +1,32 @@
+.ServiceCard {
+  width: 300px;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CardIcon {
+  /* width: 50px;
+  height: 50px; */
+  background-color: red;
+  border-radius: 50%;
+}
+
+.CardText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.CardHeader {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.CardBody {
+  font-size: 0.8rem;
+}

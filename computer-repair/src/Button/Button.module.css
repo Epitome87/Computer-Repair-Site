@@ -1,0 +1,22 @@
+.Button {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.Button a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.Button a:hover {
+  border: 1px solid white;
+}
+
+.Button a:visited {
+  color: white;
+}

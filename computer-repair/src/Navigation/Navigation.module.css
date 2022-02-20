@@ -1,0 +1,22 @@
+.Navigation {
+  padding: 1rem;
+}
+
+.NavItems {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.NavItem {
+}
+
+.NavItems a {
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+
+.NavItems a:hover {
+  border-bottom: 2px solid pink;
+}

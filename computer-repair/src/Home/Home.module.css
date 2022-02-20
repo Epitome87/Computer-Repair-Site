@@ -1,0 +1,141 @@
+.Hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      rgba(144, 39, 69, 0.8),
+      rgba(84, 52, 101, 0.8)
+    ),
+    url('../../public/hero-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.HeroHeader {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.HeroBody {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.Services {
+  background-image: linear-gradient(
+    to right,
+    rgb(144, 39, 69),
+    rgb(84, 52, 101)
+  );
+}
+
+.ServiceList {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.About {
+  display: flex;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.AboutImageContainer {
+  position: relative;
+  width: 50%;
+}
+
+.AboutImageContainer .FakeImg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.AboutImageContainer div:nth-child(1) {
+  background-color: red;
+  right: 250px;
+  top: 0;
+}
+
+.AboutImageContainer div:nth-child(2) {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  right: 0;
+}
+
+.AboutImageContainer div:nth-child(3) {
+  background-color: yellow;
+  width: 160px;
+  height: 160px;
+  right: 150px;
+  bottom: 0;
+}
+
+.AboutImageContainer div:nth-child(4) {
+  background-color: green;
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  right: 20px;
+}
+
+.AboutText {
+  width: 50%;
+}
+
+.AboutText h3 {
+  font-size: 2rem;
+  color: red;
+}
+
+.AboutText :nth-child(2) {
+  font-size: 2.5rem;
+}
+
+.Contact {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(144, 39, 69),
+    rgb(84, 52, 101)
+  );
+  padding: 5rem 0;
+}
+
+.ContactText {
+}
+
+.ContactHeader {
+  font-size: 2rem;
+}
+
+.ContactGridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ContactCardFlexContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.ContactCard {
+  display: flex;
+  gap: 1rem;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.CardText {
+}
