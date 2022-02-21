@@ -1,30 +1,40 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Button from '../Button/Button';
 import styles from './Navigation.module.css';
 
 function Navigation() {
   return (
     <nav className={styles.Navigation}>
+      <div className={styles.NavLogo}>
+        <i class='fa-solid fa-wrench'></i>
+        <div className={styles.LogoText}>
+          <div>Repair Guy</div>
+          <div>Mobile Phone & Computer Repair</div>
+        </div>
+      </div>
       <ul className={styles.NavItems}>
         <NavLink to={'/'} className={styles.NavItem}>
           Home
         </NavLink>
         <NavLink to={'/residential'} className={styles.NavItem}>
-          Residential Services
+          Price List
         </NavLink>
         <NavLink to={'/business'} className={styles.NavItem}>
-          Business Services
+          Services
         </NavLink>
         <NavLink to={'/contact'} className={styles.NavItem}>
-          Contact
+          Pages
         </NavLink>
         <NavLink to={'/about'} className={styles.NavItem}>
-          About
-        </NavLink>
-        <NavLink to={'/blog'} className={styles.NavItem}>
-          Blog
+          Contact Us
         </NavLink>
       </ul>
+      <div>
+        <Button className={styles.NavCtaBtn}>
+          <i class='fa-solid fa-phone'></i> (081) 90-8121
+        </Button>
+      </div>
     </nav>
   );
 }

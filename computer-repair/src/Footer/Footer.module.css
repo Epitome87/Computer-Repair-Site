@@ -2,7 +2,19 @@
   /* position: absolute;
   left: 0;
   bottom: 0; */
-  width: 100vw;
+  width: 100%;
   color: white;
   background-color: black;
+
+  display: flex;
+  gap: 5rem;
+  padding: 5rem 2rem;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
 }

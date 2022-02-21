@@ -1,5 +1,27 @@
 .Navigation {
-  padding: 1rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.LogoText {
+}
+
+.LogoText :nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.LogoText div:nth-child(2) {
+  font-size: 0.6rem;
 }
 
 .NavItems {

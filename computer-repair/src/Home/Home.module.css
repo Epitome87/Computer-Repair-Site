@@ -1,11 +1,22 @@
+.Container {
+  /* position: relative; */
+  width: 1150px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
 .Hero {
   text-align: center;
   padding: 5rem 2rem;
   color: white;
   background-image: linear-gradient(
-      to right,
-      rgba(144, 39, 69, 0.8),
-      rgba(84, 52, 101, 0.8)
+      45deg,
+      rgba(144, 39, 69, 0.5),
+      rgba(84, 52, 101, 0.5)
     ),
     url('../../public/hero-bg.jpg');
   background-size: cover;
@@ -15,20 +26,20 @@
 .HeroHeader {
   font-size: 4rem;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
 }
 
 .HeroBody {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
 }
 
 .Services {
-  background-image: linear-gradient(
-    to right,
-    rgb(144, 39, 69),
-    rgb(84, 52, 101)
-  );
+  background-image: linear-gradient(45deg, rgb(144, 39, 69), rgb(84, 52, 101));
 }
 
 .ServiceList {
@@ -54,36 +65,42 @@
   position: absolute;
   width: 100px;
   height: 100px;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5rem 1rem;
 }
 
 .AboutImageContainer div:nth-child(1) {
   background-color: red;
-  right: 250px;
+  left: 5%;
   top: 0;
+  width: 40%;
+  height: 40%;
+  font-size: 1.5rem;
 }
 
 .AboutImageContainer div:nth-child(2) {
   background-color: blue;
   width: 200px;
-  height: 200px;
+  height: 50%;
   top: 0;
-  right: 0;
+  right: 5%;
 }
 
 .AboutImageContainer div:nth-child(3) {
   background-color: yellow;
-  width: 160px;
-  height: 160px;
-  right: 150px;
+  width: 40%;
+  height: 50%;
+  right: 50%;
   bottom: 0;
 }
 
 .AboutImageContainer div:nth-child(4) {
   background-color: green;
   width: 150px;
-  height: 150px;
+  height: 40%;
   bottom: 0;
-  right: 20px;
+  right: 10%;
 }
 
 .AboutText {
@@ -106,7 +123,7 @@
     rgb(144, 39, 69),
     rgb(84, 52, 101)
   );
-  padding: 5rem 0;
+  padding: 5rem 2rem;
 }
 
 .ContactText {
@@ -130,6 +147,7 @@
 .ContactCard {
   display: flex;
   gap: 1rem;
+  align-items: center;
   color: black;
   background-color: white;
   border-radius: 10px;
@@ -137,5 +155,23 @@
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.CardIcon {
+  font-size: 1.5rem;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+i {
+  line-height: inherit;
+  margin: 0 auto;
+}
+
 .CardText {
+}
+
+.CardText :nth-child(1) {
+  font-size: 1;
+  font-weight: bold;
 }
